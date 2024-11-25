@@ -1,1 +1,4 @@
 product: jvm/app
+
+dependencies:
+  - com.squareup:kotlinpoet:2.0.0
