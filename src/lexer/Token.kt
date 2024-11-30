@@ -6,4 +6,4 @@ interface Token {
 
 data class SimpleToken(override val id: Int = -1): Token
 
-data class DataToken<T>(override val id: Int = -1, val data: T): Token
+data class DataToken(override val id: Int = -1, val data: String): Token

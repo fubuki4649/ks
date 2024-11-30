@@ -23,10 +23,10 @@ class DFABuilder() {
 
     }
 
-    // Add path for an identifier to the DFA
-    fun addIdentifier(identifier: String, id: Int) {
+    // Add path for a keyword/operator to the DFA
+    fun addKeyword(keyword: String, id: Int) {
 
-        rootNode.addString(identifier).accepting = id
+        rootNode.addString(keyword).accepting = id
 
     }
 
