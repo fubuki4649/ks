@@ -12,8 +12,9 @@ data class DFAState(var accepting: Int = -1) {
         return transitions.getValue(c)
     }
 
-    fun addTransition(c: Char, state: DFAState): DFAState? {
-        return transitions.put(c, state)
+    fun addTransition(c: Char, state: DFAState): DFAState {
+        transitions[c] = state
+        return this
     }
 
 }
